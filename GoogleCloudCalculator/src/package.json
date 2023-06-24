@@ -1,0 +1,30 @@
+{
+  "name": "my-new-project",
+  "version": "1.0.0",
+  "description": "pom with wdio",
+  "private": false,
+  "main": "New.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "wdio run wdio.conf.js",
+    "regression": "npx wdio run wdio.conf.js --suite regression",
+    "hardcore": "npx wdio run wdio.conf.js --suite smoke",
+    "hurt": "npx wdio run wdio.conf.js --suite hurt",
+    "GenerateReport": "allure generate allure-results --clean && allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.10.4",
+    "@wdio/cli": "^8.6.9",
+    "@wdio/local-runner": "^8.6.9",
+    "@wdio/mocha-framework": "^8.6.8",
+    "@wdio/selenium-standalone-service": "^8.10.4",
+    "@wdio/spec-reporter": "^8.10.2",
+    "chromedriver": "^114.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.3",
+    "wdio-chromedriver-service": "^8.1.1"
+  }
+}
